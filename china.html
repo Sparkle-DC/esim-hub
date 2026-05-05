@@ -10,24 +10,35 @@
 </head>
 <body class="bg-gray-50">
  <!-- Navbar (copy from index.html) -->
- <nav class="bg-white border-b sticky top-0 z-50">
+  <nav class="bg-white border-b sticky top-0 z-50">
  <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
  <a href="/" class="flex items-center gap-2 text-3xl font-bold text-blue-600">esim.utilwipe</a>
  <div class="hidden md:flex items-center gap-8 font-medium">
- <a href="/" class="hover:text-blue-600">Home</a>
- <a href="/compare" class="hover:text-blue-600">Compare</a>
- <a href="/japan" class="hover:text-blue-600">Japan</a>
- <a href="/europe" class="hover:text-blue-600">Europe</a>
- <a href="/italy" class="hover:text-blue-600">Italy</a>
- <a href="/turkey" class="hover:text-blue-600">Turkey</a>
- <a href="/usa" class="hover:text-blue-600">USA</a>
- <a href="/thailand" class="hover:text-blue-600">Thailand</a>
- <a href="/china" class="text-blue-600 font-semibold">China</a>
- <a href="/morocco" class="hover:text-blue-600">Morocco</a>
- <a href="/blog" class="hover:text-blue-600">Blog</a>
+ <a href="/compare.html" class="hover:text-blue-600">Compare</a>
+ <a href="/blog" class="hover:text-blue-600">Travel Guides</a>
+ <a href="/about.html" class="hover:text-blue-600">About</a>
  </div>
+ <div class="flex items-center gap-4">
+ <a href="#search" onclick="document.getElementById('search')?.focus()"
+ class="hidden md:inline-block bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium hover:bg-blue-700">Find my eSIM</a>
+ <button id="menu-btn" class="md:hidden text-3xl text-gray-700 focus:outline-none">
+ <i class="fa-solid fa-bars"></i>
+ </button>
+ </div>
+ </div>
+ <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-6 space-y-4">
+ <a href="/compare.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Compare</a>
+ <a href="/blog" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Travel Guides</a>
+ <a href="/about.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">About</a>
+ <a href="#search" onclick="document.getElementById('search')?.focus()"
+ class="block text-center bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium mt-4">Find my eSIM</a>
  </div>
  </nav>
+ <script>
+ document.getElementById("menu-btn")?.addEventListener("click", function() {
+ document.getElementById("mobile-menu")?.classList.toggle("hidden");
+ });
+ </script>
 
  <div class="max-w-6xl mx-auto px-6 py-12">
  <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-10">
@@ -120,8 +131,9 @@
  </div>
  </div>
 
- <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
- <p>© 2026 utilwipe.com • Affiliate links • We may earn a commission at no extra cost to you</p>
+  <footer id="site-footer" class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
+ <p>© 2026 utilwipe.com • All eSIM links are affiliate links. We may earn a commission at no extra cost to you.</p>
+ <p class="mt-2">Fast, honest comparisons since 2026</p>
  </footer>
 </body>
 </html>
