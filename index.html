@@ -15,11 +15,11 @@
  <!-- Navbar -->
   <nav class="bg-white border-b sticky top-0 z-50">
  <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
- <a href="/" class="flex items-center gap-2 text-3xl font-bold text-blue-600">esim.utilwipe</a>
+ <a href="index.html" class="flex items-center gap-2 text-3xl font-bold text-blue-600">esim.utilwipe</a>
  <div class="hidden md:flex items-center gap-8 font-medium">
- <a href="/compare.html" class="hover:text-blue-600">Compare</a>
- <a href="/blog" class="hover:text-blue-600">Travel Guides</a>
- <a href="/about.html" class="hover:text-blue-600">About</a>
+ <a href="compare.html" class="hover:text-blue-600">Compare</a>
+ <a href="blog" class="hover:text-blue-600">Travel Guides</a>
+ <a href="about.html" class="hover:text-blue-600">About</a>
  </div>
  <div class="flex items-center gap-4">
  <a href="#search" onclick="document.getElementById('search')?.focus()"
@@ -30,9 +30,9 @@
  </div>
  </div>
  <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-6 space-y-4">
- <a href="/compare.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Compare</a>
- <a href="/blog" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Travel Guides</a>
- <a href="/about.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">About</a>
+ <a href="compare.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Compare</a>
+ <a href="blog" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Travel Guides</a>
+ <a href="about.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">About</a>
  <a href="#search" onclick="document.getElementById('search')?.focus()"
  class="block text-center bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium mt-4">Find my eSIM</a>
  </div>
@@ -82,48 +82,48 @@
 
  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
  <!-- Japan -->
- <a href="/japan" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="japan" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇯🇵</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">Japan</h3>
  <p class="text-gray-500">Tokyo • Kyoto • Osaka</p>
  </a>
  <!-- Europe -->
- <a href="/europe" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="europe" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇪🇺</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">Europe</h3>
  <p class="text-gray-500">28+ countries • Unlimited plans</p>
  </a>
  <!-- Thailand -->
- <a href="/thailand" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all"><div class="text-5xl mb-4">🇹🇭</div>
+ <a href="thailand" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all"><div class="text-5xl mb-4">🇹🇭</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">Thailand</h3>
  <p class="text-gray-500">Bangkok • Phuket • Islands</p>
  </a>
  <!-- USA -->
- <a href="/usa" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="usa" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇺🇸</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">USA</h3>
  <p class="text-gray-500">New York • California • Florida</p>
  </a>
  <!-- Turkey -->
- <a href="/turkey" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="turkey" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇹🇷</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">Turkey</h3>
  <p class="text-gray-500">Istanbul • Cappadocia • Antalya</p>
  </a>
  <!-- China -->
- <a href="/china" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="china" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇨🇳</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">China</h3>
  <p class="text-gray-500">Beijing • Shanghai • Great Wall</p>
  </a>
  <!-- Italy -->
- <a href="/italy" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="italy" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇮🇹</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">Italy</h3>
  <p class="text-gray-500">Rome • Florence • Venice</p>
  </a>
  <!-- Morocco -->
- <a href="/morocco" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
+ <a href="morocco" class="group bg-white rounded-3xl shadow hover:shadow-xl p-6 transition-all">
  <div class="text-5xl mb-4">🇲🇦</div>
  <h3 class="text-2xl font-semibold group-hover:text-blue-600">Morocco</h3>
  <p class="text-gray-500">Marrakech • Fez • Sahara</p>
@@ -150,14 +150,14 @@
  document.getElementById('search').addEventListener('keypress', function(e) {
  if (e.key === 'Enter') {
  const query = this.value.toLowerCase().trim();
- if (query.includes('japan')) window.location.href = '/japan';
- else if (query.includes('europe')) window.location.href = '/europe';
- else if (query.includes('thailand')) window.location.href = '/thailand';
- else if (query.includes('usa') || query.includes('united states')) window.location.href = '/usa';
- else if (query.includes('turkey')) window.location.href = '/turkey';
- else if (query.includes('china')) window.location.href = '/china';
- else if (query.includes('italy')) window.location.href = '/italy';
- else if (query.includes('morocco')) window.location.href = '/morocco';
+ if (query.includes('japan')) window.location.href = 'japan.html';
+ else if (query.includes('europe')) window.location.href = 'europe.html';
+ else if (query.includes('thailand')) window.location.href = 'thailand.html';
+ else if (query.includes('usa') || query.includes('united states')) window.location.href = 'usa.html';
+ else if (query.includes('turkey')) window.location.href = 'turkey.html';
+ else if (query.includes('china')) window.location.href = 'china.html';
+ else if (query.includes('italy')) window.location.href = 'italy.html';
+ else if (query.includes('morocco')) window.location.href = 'morocco.html';
  else alert('🔍 In full version this would show search results');
  }
  });
