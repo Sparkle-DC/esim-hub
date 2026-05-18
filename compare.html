@@ -14,16 +14,17 @@
 </head>
 <body class="bg-gray-50 font-sans">
  <!-- Navbar (now with ALL 8 countries) -->
-  <nav class="bg-white border-b sticky top-0 z-50">
+   <nav class="bg-white border-b sticky top-0 z-50">
  <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
- <a href="./index.html" class="flex items-center gap-2 text-3xl font-bold text-blue-600">esim.utilwipe</a>
+ <a href="./index.html" class="flex items-center gap-2 text-3xl font-bold text-blue-600">eSIM Hub</a>
  <div class="hidden md:flex items-center gap-8 font-medium">
  <a href="./compare.html" class="hover:text-blue-600">Compare</a>
  <a href="./index.html#destinations" class="hover:text-blue-600">Travel Guides</a>
  <a href="./index.html#site-footer" class="hover:text-blue-600">About</a>
  </div>
  <div class="flex items-center gap-4">
- <a href="./index.html#search" class="hidden md:inline-block bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium hover:bg-blue-700">Find my eSIM</a>
+ <a href="./index.html#search" onclick="document.getElementById('search')?.focus()"
+ class="hidden md:inline-block bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium hover:bg-blue-700">Find my eSIM</a>
  <button id="menu-btn" class="md:hidden text-3xl text-gray-700 focus:outline-none">
  <i class="fa-solid fa-bars"></i>
  </button>
@@ -33,9 +34,15 @@
  <a href="./compare.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Compare</a>
  <a href="./index.html#destinations" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Travel Guides</a>
  <a href="./index.html#site-footer" class="block text-lg font-medium text-gray-700 hover:text-blue-600">About</a>
- <a href="./index.html#search" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium mt-4">Find my eSIM</a>
+ <a href="./index.html#search" onclick="document.getElementById('search')?.focus()"
+ class="block text-center bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium mt-4">Find my eSIM</a>
  </div>
  </nav>
+ <script>
+ document.getElementById("menu-btn")?.addEventListener("click", function() {
+ document.getElementById("mobile-menu")?.classList.toggle("hidden");
+ });
+ </script>
  <script>
  document.getElementById("menu-btn")?.addEventListener("click", function() {
  document.getElementById("mobile-menu")?.classList.toggle("hidden");
@@ -143,7 +150,7 @@
  </div>
  </div>
 
-  <footer id="site-footer" class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
+   <footer id="site-footer" class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
  <p>© 2026 utilwipe.com • All eSIM links are affiliate links. We may earn a commission at no extra cost to you.</p>
  <p class="mt-2">Fast, honest comparisons since 2026</p>
  </footer>

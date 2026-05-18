@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Troubleshooting guide for when your travel eSIM is not working."><title>eSIM Not Working? | eSIM Hub</title><link rel="stylesheet" href="../assets/css/styles.css"><script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head><body><nav class="bg-white border-b sticky top-0 z-50">
+ <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+ <a href="../index.html" class="flex items-center gap-2 text-3xl font-bold text-blue-600">eSIM Hub</a>
+ <div class="hidden md:flex items-center gap-8 font-medium">
+ <a href="../compare.html" class="hover:text-blue-600">Compare</a>
+ <a href="../index.html#destinations" class="hover:text-blue-600">Travel Guides</a>
+ <a href="../index.html#site-footer" class="hover:text-blue-600">About</a>
+ </div>
+ <div class="flex items-center gap-4">
+ <a href="../index.html#search" onclick="document.getElementById('search')?.focus()"
+ class="hidden md:inline-block bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium hover:bg-blue-700">Find my eSIM</a>
+ <button id="menu-btn" class="md:hidden text-3xl text-gray-700 focus:outline-none">
+ <i class="fa-solid fa-bars"></i>
+ </button>
+ </div>
+ </div>
+ <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-6 space-y-4">
+ <a href="../compare.html" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Compare</a>
+ <a href="../index.html#destinations" class="block text-lg font-medium text-gray-700 hover:text-blue-600">Travel Guides</a>
+ <a href="../index.html#site-footer" class="block text-lg font-medium text-gray-700 hover:text-blue-600">About</a>
+ <a href="../index.html#search" onclick="document.getElementById('search')?.focus()"
+ class="block text-center bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium mt-4">Find my eSIM</a>
+ </div>
+ </nav>
+ <script>
+ document.getElementById("menu-btn")?.addEventListener("click", function() {
+ document.getElementById("mobile-menu")?.classList.toggle("hidden");
+ });
+ </script><main class="container section"><article class="article"><h1>eSIM Not Working?</h1><p>If you've landed and your eSIM won't connect, try these fast fixes:</p><ol><li><b>Turn on Data Roaming:</b> Make sure Data Roaming is turned ON for your eSIM line.</li><li><b>Check Primary Data Line:</b> Ensure your phone is using the eSIM for cellular data, not your primary SIM.</li><li><b>Restart Phone:</b> Sometimes a simple reboot forces the phone to connect to the local network.</li><li><b>Check APN Settings:</b> Some providers require you to manually type in an APN in your settings. Check your provider's instructions.</li></ol></article></main><div class="mobile-bottom"><a href="../compare.html">Compare</a><a class="primary" href="../index.html">Home</a></div><footer id="site-footer" class="bg-gray-900 text-gray-400 py-12 text-center text-sm mt-auto">
+ <div class="max-w-6xl mx-auto px-6">
+ <p>© 2026 eSIM Hub • All eSIM links are affiliate links. We may earn a commission at no extra cost to you.</p>
+ <p class="mt-2">Fast, honest comparisons since 2026</p>
+ </div>
+ </footer></body></html>
